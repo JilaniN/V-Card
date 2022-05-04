@@ -1,13 +1,99 @@
-.circletag {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #E6E7ED;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;    
+html {
+    height:100%;
+    text-align: center;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
     text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .icons-social i {
+
+    font-size: 3em;
+    padding: 10px;
+    position: relative;
+    top: 350px;
+  }
+
+  img {
+    
+    border-radius: 50%;
+    width:200px;
+    position: relative;
+    top: 180px;
+
 }
 
-.circletag img{
-    margin-top:7px;
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
 }
+
+.glowing-border:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+  h1 {
+    font-family:"Monaco", monospace;
+    font-weight:bold;
+  }
+
+  h2 {
+    font-family:"Monaco", monospace;
+    font-weight: 100;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  
