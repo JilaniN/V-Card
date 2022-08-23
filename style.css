@@ -16,7 +16,7 @@ html {
     position:fixed;
     right:-50%;
     top:0;
-    z-index:-1;
+    z-index:0;
   }
   
   .bg2 {
@@ -39,8 +39,12 @@ html {
     text-align:center;
     top:50%;
     transform:translate(-50%, -50%);
+    z-index: 1;
   }
 
+  .center {
+    z-index: 2;
+  }
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -55,7 +59,8 @@ html {
     font-size: 3em;
     padding: 10px;
     position: relative;
-    top: 350px;
+    top: 300px;
+    z-index: 2;
   }
 
   img {
@@ -67,6 +72,9 @@ html {
 
 }
 
+.mypic {
+  z-index: 2;
+}
 .glowing-border {
     border: 2px solid #dadada;
     border-radius: 7px;
